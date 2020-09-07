@@ -6,3 +6,7 @@
 <strong>Description: </strong>
 
 <p><%= @article.description %></p>
+
+<p> <%= link_to 'edit' , edit_article_path(@article) %></p>
+<p> <%= link_to 'delete' , article_path(@article), method: :delete, data: { confirm: "Are you sure"} %>
+<p> <%= link_to 'articles' , articles_path %> </p>
